@@ -1,12 +1,12 @@
 "use client";
 
-import GrainSection from "@/src/app/components/layout/grains.container";
+import GrainSection from "@/app/components/layout/grains.container";
 import Image from "next/image";
 import GirlHoldingFlower from "@/assets/harmony/girl-holding-flower.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useLayoutEffect } from "react";
-import { harmonyDescription } from "@/src/app/features/landing-page/data/harmony/index.data";
+import { harmonyDescription } from "@/app/features/landing-page/data/harmony/index.data";
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -1,4 +1,4 @@
-import Footer from "@/src/app/components/layout/footer";
+import Footer from "@/app/components/layout/footer";
 import React from "react";
 
 type Props = {

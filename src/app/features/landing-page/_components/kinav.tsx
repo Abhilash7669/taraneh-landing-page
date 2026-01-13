@@ -2,8 +2,8 @@ import Image from "next/image";
 import UnionBg from "@/assets/kinav/union-bg.png";
 import KinavStar from "@/assets/kinav/star-svg.svg";
 import KinavDummyVideoImage from "@/assets/kinav/kinav-dummy-video.png";
-import { kinavDescription } from "@/src/app/features/landing-page/data/index.data";
-import GrainsContainer from "@/src/app/components/layout/grains.container";
+import { kinavDescription } from "@/app/features/landing-page/data/index.data";
+import GrainsContainer from "@/app/components/layout/grains.container";
 
 type Props = object;
 
