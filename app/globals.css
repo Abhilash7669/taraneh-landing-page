@@ -7,6 +7,8 @@
   --custom-green: oklch(90.78% 0.168 148.8);
   --deep-wine: oklch(23.20% 0.063 12.62);
   --soft-rose: oklch(85.25% 0.041 356.54);
+  --soft-white: oklch(95.21% 0.000 0);
+  --olive: oklch(68.52% 0.063 106.91);
 }
 
 @theme inline {
@@ -17,6 +19,8 @@
   --color-custom-green: var(--custom-green);
   --color-deep-wine: var(--deep-wine);
   --color-soft-rose: var(--soft-rose);
+  --color-olive: var(--olive);
+  --color-soft-white: var(--soft-white);
 }
 
 @media (prefers-color-scheme: dark) {
