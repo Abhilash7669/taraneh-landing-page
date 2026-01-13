@@ -2,8 +2,8 @@ import Image from "next/image";
 import UnionBg from "@/assets/kinav/union-bg.png";
 import KinavStar from "@/assets/kinav/star-svg.svg";
 import KinavDummyVideoImage from "@/assets/kinav/kinav-dummy-video.png";
-import { kinavDescription } from "@/app/features/landing-page/data/index.data";
-import GrainsContainer from "@/app/components/layout/grains.container";
+import { kinavDescription } from "@/src/app/features/landing-page/data/index.data";
+import GrainsContainer from "@/src/app/components/layout/grains.container";
 
 type Props = object;
 
@@ -46,11 +46,13 @@ export default function Kinav({}: Props) {
             />
             <p>Unveiling Soon</p>
           </div>
-          <p className="text-center text-sm md:text-base w-full mx-auto md:max-w-[92ch]">{kinavDescription}</p>
+          <p className="text-center text-sm md:text-base w-full mx-auto md:max-w-[92ch]">
+            {kinavDescription}
+          </p>
         </div>
         {/* todo: make button variant */}
         <div className="border-[3px] border-soft-white/35 px-12 py-6">
-            Sign up to see it first
+          Sign up to see it first
         </div>
       </div>
     </GrainsContainer>

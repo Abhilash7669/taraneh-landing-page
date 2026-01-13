@@ -1,5 +1,4 @@
-
-import { cn } from "@/app/libs/utils";
+import { cn } from "@/src/app/libs/utils";
 import Image from "next/image";
 import BgGrain from "@/assets/kinav/bg-grains.svg";
 
