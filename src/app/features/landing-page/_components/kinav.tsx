@@ -26,7 +26,7 @@ export default function Kinav({}: Props) {
       {/* top title & logo-svg*/}
       <div className="flex flex-col items-center gap-10 z-20">
         <Image src={KinavStar} height={20} width={20} alt="kinav-star" />
-        <h2 className="text-7xl bg-clip-text text-transparent bg-linear-to-b from-white to-soft-rose">
+        <h2 className="bg-clip-text text-transparent bg-linear-to-b from-white to-soft-rose">
           KINAV
         </h2>
       </div>

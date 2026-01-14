@@ -1,4 +1,5 @@
-import Harmony from "@/app/features/landing-page/_components/harmony";
+import CTA from "@/app/features/landing-page/_components/cta";
+import HarmonyV2 from "@/app/features/landing-page/_components/harmony/harmony-v2";
 import Hero from "@/app/features/landing-page/_components/hero";
 import Kinav from "@/app/features/landing-page/_components/kinav";
 import LenisProvider from "@/app/providers/lenis.providers";
@@ -11,7 +12,8 @@ export default function Home() {
           <Hero />
           <Kinav />
         </div>
-        <Harmony />
+        <HarmonyV2 />
+        <CTA />
       </main>
     </LenisProvider>
   );

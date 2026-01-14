@@ -4,11 +4,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --custom-green: oklch(90.78% 0.168 148.8);
-  --deep-wine: oklch(23.20% 0.063 12.62);
-  --soft-rose: oklch(85.25% 0.041 356.54);
-  --soft-white: oklch(95.21% 0.000 0);
-  --olive: oklch(68.52% 0.063 106.91);
+  /* taraneh-colors */
+  --t-custom-green: oklch(90.78% 0.168 148.8);
+  --t-deep-wine: oklch(23.20% 0.063 12.62);
+  --t-soft-rose: oklch(85.25% 0.041 356.54);
+  --t-soft-white: oklch(95.21% 0.000 0);
+  --t-olive: oklch(68.52% 0.063 106.91);
+  --t-taupe: oklch(59.88% 0.028 45.69);
+  --t-charcoal: oklch(26.22% 0.010 39.32);
 }
 
 @theme inline {
@@ -16,17 +19,33 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-custom-green: var(--custom-green);
-  --color-deep-wine: var(--deep-wine);
-  --color-soft-rose: var(--soft-rose);
-  --color-olive: var(--olive);
-  --color-soft-white: var(--soft-white);
+  /* taraneh-inline colors */
+  --color-custom-green: var(--t-custom-green);
+  --color-deep-wine: var(--t-deep-wine);
+  --color-soft-rose: var(--t-soft-rose);
+  --color-olive: var(--t-olive);
+  --color-soft-white: var(--t-soft-white);
+  --color-taupe: var(--t-taupe);
+  --color-charcoal: var(--t-charcoal);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+/*============= 
+  base styles
+  =============
+*/
+@layer base {
+  p {
+    @apply text-sm md:text-base text-white leading-tight
+  }
+  h1, h2, h3, h4, h5 {
+    @apply text-5xl md:text-7xl
   }
 }
 

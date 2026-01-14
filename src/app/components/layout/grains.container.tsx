@@ -1,11 +1,11 @@
-import { cn } from "@/app/libs/utils";
+import { ClassValue, cn } from "@/app/libs/utils";
 import Image from "next/image";
 import BgGrain from "@/assets/kinav/bg-grains.svg";
 
 type Props = {
   children: React.ReactNode;
-  className?: string;
-  containerClassName?: string;
+  className?: ClassValue;
+  containerClassName?: ClassValue;
 };
 
 export default function GrainSection({
