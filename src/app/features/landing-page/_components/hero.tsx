@@ -8,11 +8,12 @@ export default function Hero({}: Props) {
       <div className="h-full w-full relative flex items-end justify-center">
         <Image
           src={HeroImage}
-          height={1920}
-          width={1024}
-          quality={100}
+          quality={85}
           alt="hero"
-          className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
+          sizes="100vw"
+          priority
+          fill={true}
+          className="-z-10  object-cover"
         />
         <h1 className="text-[14vw] mb-24 md:mb-0">TARANEH</h1>
       </div>
