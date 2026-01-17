@@ -1,0 +1,1 @@
+export type VideoPlayState = 'play' | 'pause'

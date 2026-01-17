@@ -62,7 +62,7 @@ export default function CallToAction() {
             </p>
           </div>
           <p className="bg-white text-black p-6 text-center">
-            WhatsApp Taraneh
+            Get directions to the store
           </p>
         </div>
       </div>

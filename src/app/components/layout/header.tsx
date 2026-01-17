@@ -7,6 +7,8 @@ import { useEffect, useRef } from "react";
 
 type Props = object;
 
+// todo: add the cubic-beziers as tailwindcss utility classes
+
 export default function Header({}: Props) {
   const headerRef = useRef<HTMLDivElement | null>(null);
   const headerContainerRef = useRef<HTMLDivElement | null>(null);
@@ -28,7 +30,7 @@ export default function Header({}: Props) {
         headerRef.current.classList.add(...headerClasses);
       }
       if (headerContainerRef.current)
-        headerContainerRef.current.classList.add("scale-90");
+        headerContainerRef.current.classList.add("scale-80");
     }
 
     if (scrollTimeout.current) {
@@ -41,7 +43,7 @@ export default function Header({}: Props) {
       if (headerRef.current)
         headerRef.current.classList.remove(...headerClasses);
       if (headerContainerRef.current)
-        headerContainerRef.current.classList.remove("scale-90");
+        headerContainerRef.current.classList.remove("scale-80");
     }, 200);
   }
 
@@ -71,7 +73,7 @@ export default function Header({}: Props) {
     >
       <div
         ref={headerContainerRef}
-        className="ease-[cubic-bezier(0.25,0.1,0.25,1)] transition-all duration-300 flex items-center justify-between w-full max-w-7xl mx-auto relative px-4 py-2"
+        className="ease-[cubic-bezier(0.25,0.1,0.25,1)] transition-all duration-300 flex items-center justify-between w-full max-w-7xl mx-auto relative px-4 py-1"
       >
         <p className="flex items-center gap-2">
           <img src={ChevronDown.src} alt="chevron-down" />
@@ -81,8 +83,8 @@ export default function Header({}: Props) {
         <div>
           <Image
             src={TaranehLogo}
-            height={60}
-            width={60}
+            height={46}
+            width={46}
             quality={100}
             alt="Taraneh"
           />
