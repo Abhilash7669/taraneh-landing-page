@@ -12,6 +12,7 @@
   --t-olive: oklch(68.52% 0.063 106.91);
   --t-taupe: oklch(59.88% 0.028 45.69);
   --t-charcoal: oklch(26.22% 0.010 39.32);
+  --t-off-white: oklch(94.61% 0.000 0);
 }
 
 @theme inline {
@@ -27,6 +28,7 @@
   --color-soft-white: var(--t-soft-white);
   --color-taupe: var(--t-taupe);
   --color-charcoal: var(--t-charcoal);
+  --color-off-white: var(--t-off-white);
 }
 
 @media (prefers-color-scheme: dark) {
