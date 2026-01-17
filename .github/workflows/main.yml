@@ -1,7 +1,0 @@
-name: Taraneh Test Workflow
-on: push
-jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Test
-      run: echo "Pushed! Test"
