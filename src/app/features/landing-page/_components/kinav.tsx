@@ -1,12 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Image from "next/image";
-import UnionBg from "@/assets/kinav/union-bg.png";
+import UnionBg from "@/assets/kinav/union-svg.svg";
 import KinavStar from "@/assets/kinav/star-svg.svg";
-import KinavDummyVideoImage from "@/assets/kinav/kinav-dummy-video.png";
+import KinavVideoFallbackImage from "@/assets/kinav/kinav-fallback-img.webp";
 import { kinavDescription } from "@/app/features/landing-page/data/index.data";
 import GrainsContainer from "@/app/components/layout/grains.container";
 import { useEffect, useRef } from "react";
 import { VideoPlayState } from "@/app/libs/types/video.types";
+import WavyProp from "@/assets/kinav/wavy-prop.png"
 
 type Props = object;
 
@@ -19,10 +21,10 @@ export default function Kinav({}: Props) {
     if (_video) {
       if (state === "play") {
         _video.play();
-        _video.classList.add('opacity-100')
+        _video.classList.add("opacity-100");
       } else {
         _video.pause();
-        _video.classList.remove('opacity-100')
+        _video.classList.remove("opacity-100");
       }
     }
   }
@@ -34,7 +36,6 @@ export default function Kinav({}: Props) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             handleVideoToggle("play");
-            
           } else {
             handleVideoToggle("pause");
           }
@@ -58,14 +59,22 @@ export default function Kinav({}: Props) {
       className="flex flex-col items-center justify-start px-4 py-12 gap-12 md:gap-0 md:py-[6w]"
     >
       {/* bg-images positioned absolute */}
-      <Image
-        src={UnionBg}
-        width={1920}
-        height={1024}
+      {/* <Image 
+        src={WavyProp}
+        width={500}
+        height={500}
+        quality={75}
+        alt="Wavy prop"
+        className="absolute -top-12 left-0 h-[30rem] w-[200vw] object-fit -z-20"
+      /> */}
+      <img
+        src={UnionBg.src}
+        // width={1920}
+        // height={1024}
         alt="union background"
-        loading="lazy"
-        quality={50}
-        className="absolute bottom-4 left-0 w-full -z-20 h-[70dvh] md:h-[calc(136dvh-14rem)] hidden md:flex"
+        // loading="lazy"
+        // quality={50}
+        className="absolute bottom-4 left-0 w-full -z-20 h-[70dvh] md:h-[calc(136dvh-14rem)] hidden md:flex opacity-60"
       />
       {/* top title & logo-svg*/}
       <div className="flex flex-col items-center gap-10 z-20">
@@ -83,7 +92,7 @@ export default function Kinav({}: Props) {
             <div className="rounded-md overflow-hidden w-full max-w-xl h-80 relative">
               <Image
                 className="absolute inset-0 h-full w-full object-cover -z-10"
-                src={KinavDummyVideoImage}
+                src={KinavVideoFallbackImage}
                 quality={50}
                 height={240}
                 width={240}

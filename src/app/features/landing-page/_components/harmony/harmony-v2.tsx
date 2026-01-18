@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import GrainSection from "@/app/components/layout/grains.container";
 import Image from "next/image";
-import HandGrass from "@/assets/harmony/hand-grass.png";
+import HandGrass from "@/assets/harmony/hand-grass.webp";
 import { harmonyDescription } from "@/app/features/landing-page/data/harmony/index.data";
 import Rays from "@/assets/harmony/rays.svg";
 export default function HarmonyV2() {

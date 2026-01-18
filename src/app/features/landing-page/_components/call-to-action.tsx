@@ -1,16 +1,12 @@
 import Image from "next/image";
-import BlueRosery from "@/assets/footer/blue-rosery.png";
-import DanglingPhone from "@/assets/footer/dangling-telephone.png";
+import BlueRosery from "@/assets/footer/blue-rosery.webp";
+import DanglingPhone from "@/assets/footer/dangling-telephone.webp";
 
-import { cn } from "@/app/libs/utils";
 import Link from "next/link";
 
 export default function CallToAction() {
   return (
     <div className="h-[90vh] xl:h-[80vh] relative">
-      {/* <ScaleCard scaleSm={0.9} scaleXs={0.8} rounded="rounded-[48px]" />
-      <ScaleCard scaleSm={0.85} scaleXs={0.75} rounded="rounded-[24px_64px]" />
-      <ScaleCard scaleSm={0.9} scaleXs={0.8} rounded="rounded-full" /> */}
       <Image
         src={BlueRosery}
         height={1920}
@@ -34,7 +30,7 @@ export default function CallToAction() {
           <div className="flex flex-col items-center justify-center w-full gap-2">
             <p className="bg-white text-black p-6">WhatsApp Taraneh</p>
             <Link
-              className="underline underline-offset-1 text-off-white"
+              className="underline underline-offset-1 text-off-white text-sm"
               href="https://google.com/"
             >
               Get directions to the studio

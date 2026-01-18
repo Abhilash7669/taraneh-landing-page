@@ -2,7 +2,7 @@
 
 import GrainSection from "@/app/components/layout/grains.container";
 import Image from "next/image";
-import GirlHoldingFlower from "@/assets/harmony/girl-holding-flower.png";
+import GirlHoldingFlower from "@/assets/harmony/girl-holding-flower.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useLayoutEffect } from "react";

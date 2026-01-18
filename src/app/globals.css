@@ -18,8 +18,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* fonts */
+  --font-mason-neue: var(--font-mason-neue);
+  --font-bosch: var(--font-bosch);
   /* taraneh-inline colors */
   --color-custom-green: var(--t-custom-green);
   --color-deep-wine: var(--t-deep-wine);
@@ -44,10 +45,10 @@
 */
 @layer base {
   p {
-    @apply text-sm md:text-base text-white leading-tight
+    @apply text-sm md:text-base text-white leading-tight tracking-tight font-mason-neue
   }
   h1, h2, h3, h4, h5 {
-    @apply text-5xl md:text-7xl
+    @apply text-5xl md:text-7xl font-bosch
   }
 }
 

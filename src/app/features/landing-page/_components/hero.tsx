@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import HeroImage from "@/assets/hero-img.png";
+import HeroImage from "@/assets/hero-img.webp";
 import { useEffect, useRef } from "react";
 import { VideoPlayState } from "@/app/libs/types/video.types";
 type Props = object;
