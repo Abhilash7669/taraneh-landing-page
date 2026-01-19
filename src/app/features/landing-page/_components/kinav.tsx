@@ -8,7 +8,7 @@ import { kinavDescription } from "@/app/features/landing-page/data/index.data";
 import GrainsContainer from "@/app/components/layout/grains.container";
 import { useEffect, useRef } from "react";
 import { VideoPlayState } from "@/app/libs/types/video.types";
-import WavyProp from "@/assets/kinav/wavy-prop.png"
+import WavyProp from "@/assets/kinav/wavy-prop.png";
 
 type Props = object;
 
@@ -65,7 +65,7 @@ export default function Kinav({}: Props) {
         height={500}
         quality={75}
         alt="Wavy prop"
-        className="absolute -top-12 left-0 h-[30rem] w-[200vw] object-fit -z-20"
+        className="absolute -top-12 left-0 h-[30rem] w-[200vw] object-fit -z-50"
       /> */}
       <img
         src={UnionBg.src}
@@ -89,7 +89,7 @@ export default function Kinav({}: Props) {
         <div className="space-y-6 w-full">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 w-full">
             <p>New collection</p>
-            <div className="rounded-md overflow-hidden w-full max-w-xl h-80 relative">
+            <div className="rounded-md overflow-hidden w-full max-w-xl h-60 md:h-80 relative">
               <Image
                 className="absolute inset-0 h-full w-full object-cover -z-10"
                 src={KinavVideoFallbackImage}

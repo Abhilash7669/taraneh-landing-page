@@ -6,7 +6,10 @@ import GirlHoldingFlower from "@/assets/harmony/girl-holding-flower.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useLayoutEffect } from "react";
-import { hamronyTitle, harmonyDescription } from "@/app/features/landing-page/data/harmony/index.data";
+import {
+  hamronyTitle,
+  harmonyDescription,
+} from "@/app/features/landing-page/data/harmony/index.data";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,7 +45,7 @@ export default function HarmonyV1({}: Props) {
         filter: "blur(0px)",
         ease: "none",
         duration: 0.9,
-      }
+      },
     );
 
     // tl.fromTo(
@@ -137,14 +140,14 @@ export default function HarmonyV1({}: Props) {
         ease: "power2.out",
         duration: 0.9,
       },
-      ">+=0.25"
+      ">+=0.25",
     );
 
     tl.fromTo(
       ".harmony-description",
       { opacity: 0 },
       { opacity: 1, duration: 0.5, ease: "none" },
-      ">+=0.2"
+      ">+=0.2",
     );
 
     // Reading time

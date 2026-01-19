@@ -14,10 +14,10 @@ export default function Hero({}: Props) {
     if (_video) {
       if (state === "play") {
         _video.play();
-        _video.classList.add('opacity-100')
+        _video.classList.add("opacity-100");
       } else {
         _video.pause();
-        _video.classList.remove('opacity-100')
+        _video.classList.remove("opacity-100");
       }
     }
   }
@@ -47,7 +47,7 @@ export default function Hero({}: Props) {
   }, []);
 
   return (
-    <section className="min-h-[96vh] sticky top-0 grid place-items-center">
+    <section className="min-h-[88vh] md:min-h-[96vh] sticky top-0 grid place-items-center">
       <div className="h-full w-full relative flex items-end justify-center">
         <Image
           src={HeroImage}
@@ -67,7 +67,7 @@ export default function Hero({}: Props) {
         >
           <source src="/videos/hero-video.webm" type="video/webm" />
         </video>
-        <h1 className="text-[14vw] mb-24 md:mb-0">TARANEH</h1>
+        <h1 className="text-[18vw] md:text-[14vw] mb-12 md:mb-0">TARANEH</h1>
       </div>
     </section>
   );

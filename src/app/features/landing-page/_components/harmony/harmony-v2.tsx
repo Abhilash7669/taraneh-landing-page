@@ -8,9 +8,9 @@ export default function HarmonyV2() {
   return (
     <GrainSection
       containerClassName="bg-linear-to-tr from-taupe to-charcoal"
-      className="flex flex-col lg:flex-row gap-12 lg:gap-4 items-start lg:items-end pt-12"
+      className="flex flex-col lg:flex-row pl-4 md:pl-12 lg:pl-0 gap-12 pr-4 md:pr-12 lg:pr-0 lg:gap-4 items-start lg:items-end pt-12"
     >
-      <div className="md:h-auto place-content-center h-150 w-5/6 sm:w-5/6 md:w-4/6 lg:w-[52%] z-20">
+      <div className="md:h-auto place-content-center h-150 lg:w-[52%] z-20 w-full">
         <Image
           src={HandGrass}
           height={1920}
@@ -19,15 +19,19 @@ export default function HarmonyV2() {
           className="object-cover h-full w-full"
         />
       </div>
-      <div className="lg:h-full w-full lg:flex-1 pl-4 md:pl-12 lg:pl-0 space-y-12 z-20">
+      <div className="lg:h-full w-full lg:flex-1 lg:pl-0 space-y-6 lg:space-y-12 z-20">
         <h2 className="uppercase">
           In <br /> Harmony <br /> with your <br /> inner light
         </h2>
-        <p className="max-w-[54ch] lg:max-w-[44ch] ml-6 sm:ml-24 pr-4 lg:pr-0 lg:ml-0 lg:place-self-end">
+        <p className="max-w-[54ch] lg:max-w-[44ch] pr-4 lg:pr-0 lg:ml-0 lg:place-self-end">
           {harmonyDescription}
         </p>
       </div>
-      <img className="lg:absolute lg:bottom-0 lg:right-0 z-0 h-auto w-[80vw] mx-auto lg:mx-0 lg:w-[50vw]" src={Rays.src} alt="image" />
+      <img
+        className="lg:absolute lg:bottom-0 lg:right-0 z-0 h-auto w-[80vw] mx-auto lg:mx-0 lg:w-[50vw]"
+        src={Rays.src}
+        alt="image"
+      />
     </GrainSection>
   );
 }

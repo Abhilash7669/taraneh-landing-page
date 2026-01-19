@@ -17,7 +17,7 @@ export default function GrainSection({
     <section
       className={cn(
         "min-h-dvh w-full grid place-items-center",
-        containerClassName
+        containerClassName,
       )}
     >
       <div className={cn("h-full w-full relative", className)}>
