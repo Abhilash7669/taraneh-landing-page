@@ -55,7 +55,7 @@ export default function Kinav({}: Props) {
 
   return (
     <GrainsContainer
-      containerClassName="min-h-dvh sm:min-h-[136dvh] w-full sticky top-0 grid place-items-center bg-linear-to-t from-deep-wine to-soft-rose"
+      containerClassName="min-h-screen sm:min-h-[136vh] w-full sticky top-0 grid place-items-center bg-linear-to-t from-deep-wine to-soft-rose"
       className="flex flex-col items-center justify-start px-4 py-12 gap-12 md:gap-0 md:py-[6w]"
     >
       {/* bg-images positioned absolute */}
